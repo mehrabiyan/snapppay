@@ -43,3 +43,7 @@ Unit: conversion, phone, URLs, payloads, state transitions, escaping, allocation
 ## Security implementation addendum — schema 2
 
 Release candidate rc.3 encrypts hosted URLs because their path/query can contain payment tokens. Non-destructive activation migrates legacy URLs in resumable batches, retaining accounting fields and verifying existing ciphertext. Maintenance/drained workers required; mixed old/new worker operation is unsupported. Forward and rollback rules, regression evidence and historical backup handling are specified in ADR 0005.
+
+## Customer fee addendum — rc.4
+
+Admins may set an optional fixed (whole IRR) or percentage (≤2 decimals) customer fee. It is a module-owned `SnappPayFee` invoice line, synced on invoice creation/gateway change and again under lock at start, so invoice balance, provider amount, cart, callback check and ledger credit stay equal. Eligibility and client UI use the fee-inclusive total. See ADR 0006.

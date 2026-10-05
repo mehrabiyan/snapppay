@@ -8,7 +8,7 @@ require_once dirname(__DIR__,2).'/gateways/snapppay/bootstrap.php';
 function snapppay_ops_config(): array
 {
     return ['name'=>'SnappPay Operations','description'=>'BNPL payment reconciliation, refund previews and deployment readiness.',
-        'version'=>'1.0.0-rc.3','author'=>'SnappPay WHMCS Module','language'=>'english','fields'=>[]];
+        'version'=>'1.0.0-rc.4','author'=>'SnappPay WHMCS Module','language'=>'english','fields'=>[]];
 }
 
 function snapppay_ops_activate(): array

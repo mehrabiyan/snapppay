@@ -2,6 +2,7 @@
 declare(strict_types=1);
 require_once dirname(__DIR__,3).'/init.php';
 require_once dirname(__DIR__,3).'/includes/gatewayfunctions.php';
+require_once dirname(__DIR__,3).'/includes/invoicefunctions.php';
 require_once __DIR__.'/bootstrap.php';
 header('Cache-Control: no-store');
 header('Referrer-Policy: no-referrer');

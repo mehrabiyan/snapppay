@@ -22,7 +22,7 @@ try {
     $row=$runtime->service->verifyCallback(\SnappPay\Security::scalar($_POST,'transactionId',64),\SnappPay\Security::scalar($_POST,'amount',13),\SnappPay\Security::scalar($_POST,'state',6));
     // Public return displays no invoice ID, client identity, amount or token.
     $url=\SnappPay\Runtime::base($params).'clientarea.php?action=invoices';
-    echo \SnappPay\View::outcome($row['state'],$url,($params['language']??'')==='fa');
+    echo \SnappPay\View::outcome($row['state'],$url,\SnappPay\View::persian($params));
 } catch (\Throwable $e) {
     if (http_response_code()===200) {
         http_response_code(400);

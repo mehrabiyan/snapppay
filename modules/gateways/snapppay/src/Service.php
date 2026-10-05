@@ -28,6 +28,8 @@ final class Service
             if ((int) $invoice['userid'] !== $clientId || $invoice['status'] !== 'Unpaid' || $invoice['paymentmethod'] !== 'snapppay') {
                 throw new Failure('invoice_unavailable');
             }
+            // Fee line becomes part of the invoice balance before amount, cart and token are derived.
+            $invoice = $this->syncFee($invoiceId);
             $existing = $this->store->nonce($nonce);
             if ($existing) {
                 $this->environment($existing);
@@ -73,6 +75,53 @@ final class Service
                 $this->store->save($id, ['state'=>'token_unknown','error'=>Security::reason($e)]);
                 throw $e;
             }
+        });
+    }
+
+    /** Fee quote for an invoice: base excludes any existing fee line; total is what SnappPay would charge. */
+    public function quote(array $invoice): array
+    {
+        $current = 0;
+        $combined = false;
+        foreach ($invoice['items']['item'] ?? [] as $item) {
+            if (($item['type'] ?? '') === Billing::FEE_ITEM) {
+                $current += Money::rials((string) $item['amount'], $invoice['currency']);
+            }
+            // Mass Payment lines already carry each child invoice's own fee.
+            $combined = $combined || ($item['type'] ?? '') === 'Invoice';
+        }
+        $balance = Money::rials((string) $invoice['balance'], $invoice['currency']);
+        $base = $balance - $current;
+        if ($combined && $base > 0) {
+            return ['base'=>$base,'current'=>$current,'fee'=>0,'total'=>$base];
+        }
+        if ($base <= 0) {
+            // Earlier payments already covered part of the fee; never rewrite a settled portion.
+            return ['base'=>$base,'current'=>$current,'fee'=>$current,'total'=>$balance];
+        }
+        $fee = $this->config->fee($base, $invoice['currency']);
+        if ($base + $fee > Money::MAX) {
+            throw new Failure('amount_overflow');
+        }
+        return ['base'=>$base,'current'=>$current,'fee'=>$fee,'total'=>$base + $fee];
+    }
+
+    /** Add, update or remove the fee line of an unpaid invoice to match its gateway and current settings. */
+    public function syncFee(int $invoiceId): array
+    {
+        return $this->store->locked($invoiceId, function () use ($invoiceId): array {
+            $invoice = $this->billing->invoice($invoiceId);
+            $hasFee = in_array(Billing::FEE_ITEM, array_map(static fn(array $item): string => (string) ($item['type'] ?? ''), $invoice['items']['item'] ?? []), true);
+            if ($invoice['status'] !== 'Unpaid' || ($invoice['paymentmethod'] !== 'snapppay' && !$hasFee)) {
+                return $invoice;
+            }
+            $quote = $this->quote($invoice);
+            $fee = $invoice['paymentmethod'] === 'snapppay' ? $quote['fee'] : 0;
+            if ($quote['base'] <= 0 || ($fee === $quote['current'] && ($fee > 0 || !$hasFee))) {
+                return $invoice;
+            }
+            $this->billing->setFee($invoice, $fee > 0 ? Money::decimal($fee, $invoice['currency']) : null, $this->config->values['feeDescription']);
+            return $this->billing->invoice($invoiceId);
         });
     }
 

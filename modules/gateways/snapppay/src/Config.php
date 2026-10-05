@@ -43,7 +43,36 @@ final class Config
         }
         $values['commission'] = (int) $commission;
         $values['category'] = mb_substr((string) ($values['category'] ?? 'Services'), 0, 100);
+        // Fixed fee is whole rials; percentage is stored as basis points (2.5% => 250).
+        $feeType = (string) ($values['feeType'] ?? '');
+        $feeValue = trim((string) ($values['feeValue'] ?? ''));
+        if ($feeType === '' || $feeType === 'none') {
+            $values['feeType'] = '';
+            $values['feeValue'] = 0;
+        } elseif ($feeType === 'fixed' && preg_match('/^(0|[1-9][0-9]{0,12})$/D', $feeValue) && (int) $feeValue <= Money::MAX) {
+            $values['feeValue'] = (int) $feeValue;
+        } elseif ($feeType === 'percent' && preg_match('/^(100|[1-9]?[0-9])(?:\.([0-9]{1,2}))?$/D', $feeValue, $m)
+            && ($m[1] !== '100' || (int) ($m[2] ?? 0) === 0)) {
+            $values['feeValue'] = (int) $m[1] * 100 + (int) str_pad($m[2] ?? '', 2, '0');
+        } else {
+            throw new Failure('invalid_fee');
+        }
+        $description = trim(strip_tags((string) ($values['feeDescription'] ?? '')));
+        $values['feeDescription'] = mb_substr($description === '' ? 'SnappPay payment fee' : $description, 0, 200);
         $this->values = $values;
+    }
+
+    /** Fee in rials for a payable base. Percentage rounds half-up to a whole invoice-currency unit. */
+    public function fee(int $base, string $currency): int
+    {
+        if ($base <= 0 || $this->values['feeType'] === '') {
+            return 0;
+        }
+        if ($this->values['feeType'] === 'fixed') {
+            return $this->values['feeValue'];
+        }
+        $unit = Money::rials('1', $currency);
+        return intdiv($base * $this->values['feeValue'] + $unit * 5000, $unit * 10000) * $unit;
     }
 
     public function fingerprint(): string

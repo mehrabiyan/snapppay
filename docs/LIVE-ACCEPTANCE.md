@@ -14,6 +14,7 @@ Record version, host, PHP/ionCube/MySQL version, theme, provider environment, te
 | Currency conversion / composite invoices | Convert To For Processing and Mass Payment disabled for candidate; no FX or uncertified composite accounting | Pending |
 | Below/above stage eligibility bounds | Provider false below 4000 tomans/above 10M tomans; no local installment arithmetic | Pending |
 | IRR/IRT/tax/credit/discount/previous payments | Exact provider IRR total, item identities and included-tax net allocation accepted by merchant | Pending |
+| Customer fee fixed/percentage | Fee line appears on new SnappPay invoice email/PDF and client invoice; removed on gateway change and when disabled; card/selector total matches provider amount; `updateInvoiceTotal` keeps tax correct; partial/full refund handles fee; surcharge permitted by merchant contract | Pending |
 | Successful checkout/callback | Authenticated status→Verify→Settle; exact invoice credited once; core provisioning/notifications correct | Pending |
 | Abandon/FAILED/malformed/forged/replay/duplicate tabs | No unauthorized credit/revert; paid replay idempotent; second paid attempt flagged | Pending |
 | Invoice drift/different gateway during checkout | Review protects invoice accounting; actual race behavior understood | Pending |

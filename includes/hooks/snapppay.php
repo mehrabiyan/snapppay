@@ -22,6 +22,24 @@ add_hook('AfterCronJob',1,static function (): void {
     }
 });
 
+// Keep the SnappPay fee line in step with the invoice gateway. Start also re-syncs before payment.
+$syncFee=static function (array $vars): void {
+    try {
+        require_once ROOTDIR.'/includes/gatewayfunctions.php';
+        require_once ROOTDIR.'/includes/invoicefunctions.php';
+        $params=getGatewayVariables('snapppay');
+        if (empty($params['type']) || empty($vars['invoiceid'])) {
+            return;
+        }
+        (new \SnappPay\Runtime($params))->service->syncFee((int)$vars['invoiceid']);
+    } catch (\Throwable $e) {
+        \SnappPay\Runtime::log($e,'fee');
+    }
+};
+foreach (['InvoiceCreationPreEmail','InvoiceCreated','InvoiceChangeGateway'] as $hook) {
+    add_hook($hook,1,$syncFee);
+}
+
 // Stock cart uses gateways; Twenty-One invoices use availableGateways.
 // Keep paymentmethods support for custom themes that expose that shape.
 $filter=static function (array $vars): array {
@@ -46,13 +64,16 @@ $filter=static function (array $vars): array {
     unset($GLOBALS['snapppay_offer']);
     try {
         require_once ROOTDIR.'/includes/gatewayfunctions.php';
-        $runtime=new \SnappPay\Runtime(getGatewayVariables('snapppay'));
+        $params=getGatewayVariables('snapppay');
+        $runtime=new \SnappPay\Runtime($params);
         if (isset($vars['invoiceid'])) {
             $invoice=$runtime->billing->invoice((int)$vars['invoiceid']);
             if ((int)$invoice['userid']!==\SnappPay\Runtime::clientId()) {
                 throw new \SnappPay\Failure('access_denied');
             }
-            $amount=\SnappPay\Money::rials((string)$invoice['balance'],$invoice['currency']);
+            $quote=$runtime->service->quote($invoice);
+            $fee=$quote['fee'];
+            $amount=$quote['total'];
         } else {
             $total=$vars['rawtotal']??$vars['total']??null;
             if (is_object($total) && method_exists($total,'toNumeric')) {
@@ -64,9 +85,15 @@ $filter=static function (array $vars): array {
             if (!is_string($total) && !is_int($total)) {
                 throw new \SnappPay\Failure('cart_total_unavailable');
             }
-            $amount=\SnappPay\Money::rials((string)$total,(string)($vars['currency']['code']??''));
+            $currency=(string)($vars['currency']['code']??'');
+            $amount=\SnappPay\Money::rials((string)$total,$currency);
+            $fee=$runtime->config->fee($amount,$currency);
+            $amount+=$fee;
         }
         $offer=$runtime->api->eligible($amount);
+        if ($offer['eligible'] && $fee>0) {
+            $offer['description']=trim($offer['description']."\n".\SnappPay\View::feeText($fee,$amount,\SnappPay\View::persian($params)));
+        }
         foreach ($collections as &$methods) {
             foreach ($methods as $key=>$method) {
                 if ($isSnappPay($key,$method)) {

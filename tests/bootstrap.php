@@ -14,7 +14,7 @@ function invoice(): array
     return ['invoiceid'=>1,'userid'=>7,'status'=>'Unpaid','paymentmethod'=>'snapppay','currency'=>'IRT','balance'=>'110000.00','total'=>'220000.00','tax'=>'20000.00','tax2'=>'0.00',
         'items'=>['item'=>[['id'=>10,'description'=>'Hosting <b>plan</b>','amount'=>'150000.00'],['id'=>11,'description'=>'Domain','amount'=>'50000.00']]]];
 }
-function fixture(): array
+function fixture(array $override=[]): array
 {
     $db=new PDO('sqlite::memory:');
     $key=random_bytes(SODIUM_CRYPTO_SECRETBOX_KEYBYTES);
@@ -28,7 +28,7 @@ function fixture(): array
     $store->install();
     $provider=new FakeProvider();
     $billing=new FakeBilling(invoice());
-    $config=config();
+    $config=config($override);
     $service=new \SnappPay\Service($config,new \SnappPay\Api($config,$provider),$store,$billing);
     return [$service,$store,$provider,$billing,$db];
 }

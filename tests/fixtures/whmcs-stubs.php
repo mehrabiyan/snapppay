@@ -5,12 +5,17 @@ namespace WHMCS\Database {
         public static function connection(): Connection { throw new \LogicException(); }
         public static function table(string $table): Query { throw new \LogicException(); }
     }
-    class Connection { public function getPdo(): \PDO { throw new \LogicException(); } }
+    class Connection {
+        public function getPdo(): \PDO { throw new \LogicException(); }
+        public function transaction(\Closure $callback) { throw new \LogicException(); }
+    }
     class Query {
         public function where(string $key,$value): self { return $this; }
         public function first(): ?object { throw new \LogicException(); }
         public function get(): \ArrayAccess&\Countable { throw new \LogicException(); }
         public function value(string $key) { throw new \LogicException(); }
+        public function delete(): int { throw new \LogicException(); }
+        public function insert(array $values): bool { throw new \LogicException(); }
     }
 }
 namespace WHMCS\Authentication {
@@ -32,6 +37,7 @@ namespace {
     function checkCbInvoiceID(int $id,string $module): int { throw new \LogicException(); }
     function checkCbTransID(string $id): void { throw new \LogicException(); }
     function addInvoicePayment(int $id,string $transid,string $amount,string $fees,string $gateway): void { throw new \LogicException(); }
+    function updateInvoiceTotal(int $id): void { throw new \LogicException(); }
     function logTransaction(string $module,array $data,string $state): void { throw new \LogicException(); }
     function add_hook(string $hook,int $priority,callable $callback): void { }
     define('WHMCS',true);

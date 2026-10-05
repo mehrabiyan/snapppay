@@ -94,3 +94,52 @@ test('integration hosted URL migration traverses multiple batches',static functi
     $rows=$db->query('SELECT transaction_id,payment_url FROM mod_snapppay')->fetchAll(PDO::FETCH_ASSOC);eq(count($rows),101);
     foreach($rows as $r){truth(!str_contains($r['payment_url'],'legacy-secret'));eq($f[1]->get($r['transaction_id'])['payment_url'],$url);}
 });
+test('integration percentage fee line added before token and paid exactly',static function (): void {
+    $f=fixture(['feeType'=>'percent','feeValue'=>'2.5']);$r=startFixture($f);
+    eq($r['original_amount'],1127500);eq($f[3]->data['balance'],'112750.00');eq($f[3]->data['total'],'222750.00');
+    $token=array_values(array_filter($f[2]->calls,static fn(array $c): bool=>$c['op']==='token'))[0]['payload'];
+    eq($token['amount'],1127500);eq(array_sum(array_column($token['cartList'][0]['cartItems'],'amount')),1127500);truth(in_array('SnappPay payment fee',array_column($token['cartList'][0]['cartItems'],'name'),true));
+    $eligible=array_values(array_filter($f[2]->calls,static fn(array $c): bool=>$c['op']==='eligible'))[0]['payload'];eq((int)$eligible['amount'],1127500);
+    $f[2]->buyerPaid=true;$r=$f[0]->verifyCallback($r['transaction_id'],'1127500','OK');eq($r['state'],'paid');eq($f[3]->payments[$r['transaction_id']],1127500);
+});
+test('integration fee sync idempotent across attempts and quotes',static function (): void {
+    $f=fixture(['feeType'=>'fixed','feeValue'=>'5000']);$a=startFixture($f);$b=startFixture($f);
+    eq($f[3]->feeWrites,1);eq($a['amount'],1105000);eq($b['amount'],1105000);
+    $q=$f[0]->quote($f[3]->data);eq([$q['base'],$q['current'],$q['fee'],$q['total']],[1100000,5000,5000,1105000]);
+});
+test('integration fee quote before line exists shows total',static function (): void {
+    $f=fixture(['feeType'=>'percent','feeValue'=>'2.5']);$q=$f[0]->quote(invoice());eq([$q['current'],$q['fee'],$q['total']],[0,27500,1127500]);eq($f[3]->feeWrites,0);
+});
+test('integration gateway change removes fee and restores balance',static function (): void {
+    $f=fixture(['feeType'=>'percent','feeValue'=>'2.5']);$f[0]->syncFee(1);eq($f[3]->data['balance'],'112750.00');
+    $f[3]->data['paymentmethod']='banktransfer';$f[0]->syncFee(1);eq($f[3]->data['balance'],'110000.00');eq($f[3]->data['total'],'220000.00');eq(count($f[3]->data['items']['item']),2);
+    $f[3]->data['paymentmethod']='snapppay';$f[0]->syncFee(1);eq($f[3]->data['balance'],'112750.00');
+});
+test('integration disabled fee removes stale line at start',static function (): void {
+    $f=fixture(['feeType'=>'fixed','feeValue'=>'5000']);$f[0]->syncFee(1);eq($f[3]->data['balance'],'110500.00');
+    $g=fixture();$g[3]->data=$f[3]->data;$r=startFixture($g);eq($r['amount'],1100000);eq($g[3]->data['balance'],'110000.00');
+});
+test('integration fee config change updates line once',static function (): void {
+    $f=fixture(['feeType'=>'fixed','feeValue'=>'5000']);$f[0]->syncFee(1);
+    $g=fixture(['feeType'=>'percent','feeValue'=>'1']);$g[3]->data=$f[3]->data;$g[0]->syncFee(1);$g[0]->syncFee(1);eq($g[3]->data['balance'],'111100.00');eq($g[3]->feeWrites,1);
+});
+test('integration fee sync ignores other gateways, paid invoices and foreign currencies',static function (): void {
+    $f=fixture(['feeType'=>'fixed','feeValue'=>'5000']);
+    $f[3]->data['paymentmethod']='paypal';$f[3]->data['currency']='USD';$f[0]->syncFee(1);
+    $f[3]->data=invoice();$f[3]->data['status']='Paid';$f[0]->syncFee(1);eq($f[3]->feeWrites,0);
+});
+test('integration fee never rewritten once payments cover base',static function (): void {
+    $f=fixture(['feeType'=>'fixed','feeValue'=>'5000']);$f[0]->syncFee(1);$f[3]->data['balance']='300.00';
+    $q=$f[0]->quote($f[3]->data);eq([$q['fee'],$q['total']],[5000,3000]);$f[0]->syncFee(1);eq($f[3]->feeWrites,1);
+});
+test('integration foreign client cannot trigger fee write',static function (): void {
+    $f=fixture(['feeType'=>'fixed','feeValue'=>'5000']);fails(static fn()=>$f[0]->start(1,8,'09123456789',bin2hex(random_bytes(32)),'https://merchant.example.test/callback'),'invoice_unavailable');eq($f[3]->feeWrites,0);
+});
+test('integration partial refund after fee keeps cart invariant',static function (): void {
+    $f=fixture(['feeType'=>'percent','feeValue'=>'2.5']);$r=payFixture($f);$out=$f[0]->refund($r['transaction_id'],127500,1);
+    $row=$f[1]->get($r['transaction_id']);eq($row['amount'],1000000);eq(array_sum(array_column($row['cart'][0]['cartItems'],'amount')),1000000);eq($out['amount'],127500);
+});
+test('integration mass payment invoice gets no fee on fees',static function (): void {
+    $f=fixture(['feeType'=>'fixed','feeValue'=>'5000']);$f[3]->data['items']['item'][0]['type']='Invoice';
+    eq($f[0]->quote($f[3]->data)['fee'],0);$f[0]->syncFee(1);eq($f[3]->feeWrites,0);eq($f[3]->data['balance'],'110000.00');
+});

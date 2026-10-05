@@ -23,6 +23,9 @@ function snapppay_config(): array
         'methods'=>['FriendlyName'=>'Payment methods','Type'=>'dropdown','Options'=>[''=>'All enabled methods','INSTALLMENT'=>'Installment','POSTPAID'=>'Postpaid','FINANCING'=>'Financing','INSTALLMENT,FINANCING'=>'Installment + Financing'],'Description'=>'Blank permits all. Forced methods require SnappPay enablement.'],
         'category'=>['FriendlyName'=>'Default category','Type'=>'text','Default'=>'Services'],
         'commission'=>['FriendlyName'=>'Commission type','Type'=>'text','Default'=>'100'],
+        'feeType'=>['FriendlyName'=>'Customer fee','Type'=>'dropdown','Options'=>[''=>'No fee','fixed'=>'Fixed amount','percent'=>'Percentage of payable amount'],'Description'=>'Added to the invoice as a separate line while SnappPay is its payment method. Confirm surcharging is permitted by your SnappPay contract.'],
+        'feeValue'=>['FriendlyName'=>'Fee value','Type'=>'text','Size'=>'15','Description'=>'Fixed: whole Rials (IRR), also for toman invoices. Percentage: 0–100, up to two decimals, e.g. 2.5'],
+        'feeDescription'=>['FriendlyName'=>'Fee invoice line','Type'=>'text','Size'=>'40','Default'=>'SnappPay payment fee','Description'=>'Invoice item description shown to the client.'],
         'allowRevert'=>['FriendlyName'=>'Approved revert support','Type'=>'yesno','Description'=>'Enable only when SnappPay support requests it.'],
         'language'=>['FriendlyName'=>'Interface language','Type'=>'dropdown','Options'=>'auto,en,fa','Default'=>'auto'],
         'certified'=>['FriendlyName'=>'Production acceptance completed','Type'=>'yesno','Description'=>'Enable after licensed WHMCS staging and SnappPay pre-demo/demo pass.']];
@@ -38,13 +41,13 @@ function snapppay_link(array $params): string
         if ((int)$invoice['userid']!==$client || $invoice['status']!=='Unpaid' || $invoice['paymentmethod']!=='snapppay') {
             return '';
         }
-        $amount=\SnappPay\Money::rials((string)$invoice['balance'],$invoice['currency']);
-        if ($amount<=0) {
+        $quote=$runtime->service->quote($invoice);
+        if ($quote['total']<=0) {
             return '';
         }
-        $offer=$runtime->api->eligible($amount);
-        $fa=($params['language']??'auto')==='fa' || (($params['language']??'auto')==='auto' && ($_SESSION['Language']??'')==='farsi');
-        return \SnappPay\View::card($offer,$id,\SnappPay\Runtime::base($params),(string)($params['clientdetails']['phonenumber']??''),$fa);
+        $offer=$runtime->api->eligible($quote['total']);
+        return \SnappPay\View::card($offer,$id,\SnappPay\Runtime::base($params),(string)($params['clientdetails']['phonenumber']??''),
+            \SnappPay\View::persian($params),$quote['fee'],$quote['total']);
     } catch (\Throwable $e) {
         \SnappPay\Runtime::log($e,'render');
         return '';

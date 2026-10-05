@@ -4,7 +4,19 @@ namespace SnappPay;
 
 final class View
 {
-    public static function card(array $offer, int $invoiceId, string $base, string $mobile, bool $fa): string
+    public static function persian(array $params): bool
+    {
+        $language=$params['language']??'auto';
+        return $language==='fa' || ($language==='auto' && ($_SESSION['Language']??'')==='farsi');
+    }
+
+    public static function feeText(int $fee, int $total, bool $fa): string
+    {
+        return $fa?'کارمزد اسنپ‌پی: '.number_format($fee).' ریال · مبلغ قابل پرداخت: '.number_format($total).' ریال'
+            :'SnappPay fee: '.number_format($fee).' IRR · Total payable: '.number_format($total).' IRR';
+    }
+
+    public static function card(array $offer, int $invoiceId, string $base, string $mobile, bool $fa, int $fee = 0, int $total = 0): string
     {
         if (!$offer['eligible']) {
             return '';
@@ -24,6 +36,7 @@ final class View
         return '<link rel="stylesheet" href="'.$e($base).'modules/gateways/snapppay/assets/style.css">'
             .'<section class="sp-card" dir="'.$dir.'" aria-label="SnappPay"><div class="sp-brand"><span class="sp-mark" aria-hidden="true">S</span><span>SnappPay</span><span class="sp-tag">BNPL</span></div>'
             .'<h3>'.$e($offer['title_message']).'</h3><p class="sp-description">'.$e($offer['description']).'</p>'
+            .($fee>0?'<p class="sp-fee">'.$e(self::feeText($fee,$total,$fa)).'</p>':'')
             .'<form method="post" action="'.$e($base).'modules/gateways/snapppay/start.php">'
             .'<input type="hidden" name="token" value="'.$token.'"><input type="hidden" name="invoice" value="'.$invoiceId.'">'
             .'<input type="hidden" name="nonce" value="'.$nonce.'"><label for="sp-mobile-'.$nonce.'">'.$label.'</label>'

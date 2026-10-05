@@ -18,7 +18,7 @@ if($path==='/login') {
 }
 if($path==='/invoice') {
     require $site.'/modules/gateways/snapppay.php';
-    echo '<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>'.file_get_contents($site.'/modules/gateways/snapppay/assets/style.css').'</style></head><body>'.preg_replace('~<link[^>]+>~','',snapppay_link(getGatewayVariables('snapppay')+['invoiceid'=>1,'clientdetails'=>['phonenumber'=>'09123456789']])).'</body></html>';return;
+    echo '<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>'.file_get_contents($site.'/modules/gateways/snapppay/assets/style.css').'</style></head><body>'.preg_replace('~<link[^>]+>~','',snapppay_link(getGatewayVariables('snapppay')+['invoiceid'=>(int)($_GET['id']??1),'clientdetails'=>['phonenumber'=>'09123456789']])).'</body></html>';return;
 }
 if($path==='/hook-cart') {
     require $site.'/includes/hooks/snapppay.php';
@@ -39,6 +39,17 @@ if($path==='/hook-invoice') {
     require $site.'/includes/hooks/snapppay.php';
     $out=$GLOBALS['test_hooks']['ClientAreaPageViewInvoice'](['invoiceid'=>1,'availableGateways'=>['snapppay'=>'Static name','banktransfer'=>'Bank Transfer']]);
     header('Content-Type: application/json');echo json_encode($out);return;
+}
+if($path==='/settings') {
+    foreach(['feeType','feeValue','feeDescription'] as $key){if(isset($_GET[$key])){$s=simdb()->prepare('INSERT OR REPLACE INTO test_settings (name,value) VALUES (?,?)');$s->execute([$key,$_GET[$key]]);}}
+    echo 'ok';return;
+}
+if($path==='/hook-gateway') {
+    require $site.'/includes/hooks/snapppay.php';
+    $id=(int)$_GET['id'];$invoice=localAPI('GetInvoice',['invoiceid'=>$id]);$invoice['paymentmethod']=$_GET['method'];
+    $s=simdb()->prepare('UPDATE test_invoices SET data=? WHERE id=?');$s->execute([json_encode($invoice),$id]);
+    $GLOBALS['test_hooks'][$_GET['hook']??'InvoiceChangeGateway'](['invoiceid'=>$id,'paymentmethod'=>$_GET['method']]);
+    header('Content-Type: application/json');echo json_encode(localAPI('GetInvoice',['invoiceid'=>$id]));return;
 }
 if($path==='/admin') {
     require $site.'/modules/addons/snapppay_ops/snapppay_ops.php';

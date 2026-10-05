@@ -31,3 +31,12 @@ test('unit API origin rejects path',static fn()=>fails(static fn()=>config(['api
 test('unit config secret CRLF injection',static fn()=>fails(static fn()=>config(['clientId'=>"evil\nHeader: bad"]),'missing_configuration'));
 foreach(['127.0.0.1','10.1.1.1','169.254.169.254','100.64.0.1','224.0.0.1','0.0.0.0','192.168.0.1','::1','::ffff:127.0.0.1','fc00::1','fe80::1','ff02::1','2001:db8::1'] as $ip){test('unit SSRF blocks IP '.$ip,static fn()=>eq(Security::publicIp($ip),false));}
 test('unit SSRF allows public IPv4 and IPv6',static function():void{truth(Security::publicIp('8.8.8.8'));truth(Security::publicIp('2606:4700:4700::1111'));});
+foreach([['','',0],['none','5',0],['fixed','5000',5000],['fixed','0',0],['percent','2.5',250],['percent','100',10000],['percent','0.05',5],['percent','12.30',1230]] as [$type,$value,$want]){test("unit fee config $type $value",static fn()=>eq(config(['feeType'=>$type,'feeValue'=>$value])->values['feeValue'],$want));}
+foreach([['fixed','-1'],['fixed','1.5'],['fixed','abc'],['fixed',''],['percent','101'],['percent','100.5'],['percent','2.555'],['percent','05'],['percent','-2'],['percent','2,5'],['surcharge','5']] as [$type,$value]){test("unit fee config rejects $type $value",static fn()=>fails(static fn()=>config(['feeType'=>$type,'feeValue'=>$value]),'invalid_fee'));}
+test('unit fee calculation exact and rounded to currency unit',static function (): void {
+    $p=config(['feeType'=>'percent','feeValue'=>'2.5']);
+    eq($p->fee(1100000,'IRT'),27500);eq($p->fee(1005,'IRT'),30);eq($p->fee(1001,'IRR'),25);eq($p->fee(1020,'IRR'),26);eq($p->fee(0,'IRR'),0);eq($p->fee(Money::MAX,'IRR'),25000000000);
+    eq(config(['feeType'=>'fixed','feeValue'=>'5000'])->fee(1,'IRT'),5000);eq(config(['feeType'=>'fixed','feeValue'=>'5000'])->fee(0,'IRT'),0);eq(config()->fee(1000,'IRR'),0);
+    eq(config()->values['feeDescription'],'SnappPay payment fee');eq(config(['feeDescription'=>'<b>کارمزد</b>'])->values['feeDescription'],'کارمزد');
+});
+test('unit card shows fee and total',static function (): void {$html=View::card(['eligible'=>true,'title_message'=>'t','description'=>'d'],1,'https://merchant.example.test/','',false,27500,1127500);truth(str_contains($html,'SnappPay fee: 27,500 IRR · Total payable: 1,127,500 IRR'));truth(!str_contains(View::card(['eligible'=>true,'title_message'=>'t','description'=>'d'],1,'https://merchant.example.test/','',true),'sp-fee'));truth(str_contains(View::feeText(1000,2000,true),'1,000 ریال'));});

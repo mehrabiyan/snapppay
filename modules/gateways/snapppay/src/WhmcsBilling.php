@@ -46,6 +46,20 @@ final class WhmcsBilling implements Billing
         logTransaction('snapppay',['transactionId'=>$row['transaction_id'],'invoiceId'=>$row['invoice_id'],'operation'=>'credit'],'Successful');
     }
 
+    public function setFee(array $invoice, ?string $amount, string $description): void
+    {
+        $id=(int)$invoice['invoiceid'];
+        Capsule::connection()->transaction(static function () use ($id,$invoice,$amount,$description): void {
+            Capsule::table('tblinvoiceitems')->where('invoiceid',$id)->where('type',self::FEE_ITEM)->delete();
+            if ($amount!==null) {
+                Capsule::table('tblinvoiceitems')->insert(['invoiceid'=>$id,'userid'=>(int)$invoice['userid'],'type'=>self::FEE_ITEM,'relid'=>0,
+                    'description'=>$description,'amount'=>$amount,'taxed'=>0,'duedate'=>(string)($invoice['duedate']??date('Y-m-d')),
+                    'paymentmethod'=>'snapppay','notes'=>'']);
+            }
+            updateInvoiceTotal($id);
+        });
+    }
+
     public function refundExists(string $refundId, array $row, int $amount): bool
     {
         $records=Capsule::table('tblaccounts')->where('transid',$refundId)->get();
