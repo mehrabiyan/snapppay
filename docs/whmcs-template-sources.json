@@ -1,0 +1,26 @@
+{
+  "reviewed": "2026-10-05",
+  "sources": [
+    {
+      "name": "cart",
+      "release": "v8.13.7-release.1",
+      "commit": "aca0e46db2b3e519999dfe8e3c44498c1522dc94",
+      "url": "https://github.com/WHMCS/orderforms-standard_cart/blob/aca0e46db2b3e519999dfe8e3c44498c1522dc94/checkout.tpl",
+      "sha256": "ab572ca5ed5ff58e07d970ee16b86a8244ef7d1c839241394dd2a98f0958e71b"
+    },
+    {
+      "name": "twenty-one",
+      "release": "v8.13.7-release.1",
+      "commit": "ab35e19dad11339d00893c90fe7260e17d596715",
+      "url": "https://github.com/WHMCS/templates-twenty-one/blob/ab35e19dad11339d00893c90fe7260e17d596715/viewinvoice.tpl",
+      "sha256": "703bad352ce3e9621de2b4c4b1353a000e2d02671ede24375ff777f6a59bff49"
+    },
+    {
+      "name": "six",
+      "release": "v8.13.7-release.1",
+      "commit": "0930e2ab61df5d1e80f3971ad65411e765c41aa1",
+      "url": "https://github.com/WHMCS/templates-six/blob/0930e2ab61df5d1e80f3971ad65411e765c41aa1/viewinvoice.tpl",
+      "sha256": "3854d08274de8ad8e48705bf83f069b99cd5f1d555a025c45fc5467f8bdb2974"
+    }
+  ]
+}

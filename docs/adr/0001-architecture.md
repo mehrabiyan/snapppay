@@ -1,0 +1,3 @@
+# ADR 0001 — Gateway, addon and isolated payment service
+
+Accepted 2026-10-05. Use native third-party gateway functions, thin HTTP entrypoints, administrative addon and cron hook. Dependency-free PHP runtime; separate API, money/cart, state service, SQL repository, WHMCS adapter and views. Composer development tooling only. WHMCS owns invoice/accounting/provisioning. Service owns BNPL state, provider recovery and concurrency. MySQL connection-scoped advisory invoice lock spans provider calls and ledger application; durable write-ahead intent survives process death. Avoid long database transactions around HTTP and avoid distributed-lock lease expiry during provider calls. Test adapter replaces licensed core only in test harness; never shipped.

@@ -1,0 +1,11 @@
+/vendor/
+/node_modules/
+/docs/research/
+/tests/runtime/
+/dist/*
+!/dist/snapppay-whmcs-1.0.0-rc.3-upload.zip
+!/dist/snapppay-whmcs-1.0.0-rc.3-upload.zip.sha256
+/.tools/
+*.log
+.env
+.DS_Store

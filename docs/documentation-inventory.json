@@ -1,0 +1,806 @@
+[
+  {
+    "id": 7408,
+    "title": "راهنمای حفظ UTM برای پذیرندگان",
+    "url": "https://academy.snapppay.ir/2026/10/04/utm-preservation-guide-for-merchants/",
+    "sha256": "1328206639bca335b7192339a4fcaa121572ef83c7e655cb1119286d4232b2a8"
+  },
+  {
+    "id": 7003,
+    "title": "Kowork  | خدمات تخصصی رشد کسب‌وکار همکار اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/09/26/kowork-%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d8%aa%d8%ae%d8%b5%d8%b5%db%8c-%d8%b1%d8%b4%d8%af-%da%a9%d8%b3%d8%a8%d9%88%da%a9%d8%a7%d8%b1-%d9%87%d9%85%da%a9%d8%a7%d8%b1-%d8%a7%d8%b3%d9%86%d9%be/",
+    "sha256": "bb2057c74bdd1abd78464d2ed9f759d243786d053e2cdfb423e645e7982b07a0"
+  },
+  {
+    "id": 6951,
+    "title": "آموزش محاسبات مالی با اکسل ریز جزییات",
+    "url": "https://academy.snapppay.ir/2026/09/22/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d9%85%d8%ad%d8%a7%d8%b3%d8%a8%d8%a7%d8%aa-%d9%85%d8%a7%d9%84%db%8c-%d8%a8%d8%a7-%d8%a7%da%a9%d8%b3%d9%84-%d8%b1%db%8c%d8%b2-%d8%ac%d8%b2%db%8c%db%8c%d8%a7%d8%aa/",
+    "sha256": "d2ddeb36006d69d279c23151e05a64518220f43bf08fea72d3a34c88cd8484ce"
+  },
+  {
+    "id": 6873,
+    "title": "وبینار آموزشی پنل پذیرندگان",
+    "url": "https://academy.snapppay.ir/2026/09/14/%d9%88%d8%a8%db%8c%d9%86%d8%a7%d8%b1-%d8%a2%d9%85%d9%88%d8%b2%d8%b4%db%8c-%d9%be%d9%86%d9%84-%d9%be%d8%b0%db%8c%d8%b1%d9%86%d8%af%da%af%d8%a7%d9%86/",
+    "sha256": "f839769270086e29df70447f48c64dff31d53b42155be2ff877604f7895c88c3"
+  },
+  {
+    "id": 6872,
+    "title": "وبینار آموزشی پنل سرچ ادز",
+    "url": "https://academy.snapppay.ir/2026/09/14/%d9%88%d8%a8%db%8c%d9%86%d8%a7%d8%b1-%d8%a2%d9%85%d9%88%d8%b2%d8%b4%db%8c-%d9%be%d9%86%d9%84-%d8%b3%d8%b1%da%86-%d8%a7%d8%af%d8%b2/",
+    "sha256": "2b4426e01a2170e5e654f2549eadcebbb2c70af08118802d4a0491a99c243f41"
+  },
+  {
+    "id": 6845,
+    "title": "وبینار آنلاین اسنپ‌پی: از ثبت‌نام تا فعال‌سازی درگاه",
+    "url": "https://academy.snapppay.ir/2026/09/14/%d9%88%d8%a8%db%8c%d9%86%d8%a7%d8%b1-%d8%a2%d9%86%d9%84%d8%a7%db%8c%d9%86-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c-%d8%a7%d8%b2-%d8%ab%d8%a8%d8%aa%d9%86%d8%a7%d9%85-%d8%aa%d8%a7-%d9%81/",
+    "sha256": "c8aed2aa6e702e0b7809158442d1f329593163d8ec36a814fcd75c19c28c49c2"
+  },
+  {
+    "id": 6274,
+    "title": "راهنمای آموزشی پاسخگویی پذیرندگان به تیکت‌های اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/09/06/%d8%b1%d8%a7%d9%87%d9%86%d9%85%d8%a7%db%8c-%d8%a2%d9%85%d9%88%d8%b2%d8%b4%db%8c-%d9%be%d8%a7%d8%b3%d8%ae%da%af%d9%88%db%8c%db%8c-%d9%be%d8%b0%db%8c%d8%b1%d9%86%d8%af%da%af%d8%a7%d9%86-%d8%a8%d9%87/",
+    "sha256": "464f7e90d5040389ca319b1bfe97b5d2ac4ca7a37941de344791afcb17d23f04"
+  },
+  {
+    "id": 5898,
+    "title": "آموزش تبلیغات بنری در اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/08/29/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d8%aa%d8%a8%d9%84%db%8c%d8%ba%d8%a7%d8%aa-%d8%a8%d9%86%d8%b1%db%8c-%d8%af%d8%b1-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c/",
+    "sha256": "f3cb0acf1821e3948fea77ec9239ef61d29122bae6a5db645ca50415a73720ef"
+  },
+  {
+    "id": 5571,
+    "title": "راهنمای بخش مالی پرتال پذیرندگان اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/08/24/%d8%b1%d8%a7%d9%87%d9%86%d9%85%d8%a7%db%8c-%d8%a8%d8%ae%d8%b4-%d9%85%d8%a7%d9%84%db%8c-%d9%be%d8%b1%d8%aa%d8%a7%d9%84-%d9%be%d8%b0%db%8c%d8%b1%d9%86%d8%af%da%af%d8%a7%d9%86-%d8%a7%d8%b3%d9%86%d9%be/",
+    "sha256": "e43d45df38dc3d4f0e0e74a8ce31a00483f46b6b1ab025e51b4efbfdc5c3d498"
+  },
+  {
+    "id": 4905,
+    "title": "راهنمای جامع ورود به پرتال پذیرندگان اسنپ‌پی (قبل و بعد از ثبت‌نام)",
+    "url": "https://academy.snapppay.ir/2026/08/05/portal-login-guide/",
+    "sha256": "c9289e5e943f787a2ba7f76c487c102ac09333b0e90a8113e4b1d21a814d1abc"
+  },
+  {
+    "id": 4751,
+    "title": "دفتر اول| خدمات تلفن ابری همکار اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/08/02/daftar-shoma/",
+    "sha256": "db421bd229ef186f51c9eeed4eb22c022aabdc3877a777e173f23b2faedf712d"
+  },
+  {
+    "id": 4655,
+    "title": "صدای پذیرندگان اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/07/29/sedaye-pazirandegan-snapppay/",
+    "sha256": "e4c0159e50b694e2e30ac458ff69afe89cbd00ab0afbef68762296f5a7ab2428"
+  },
+  {
+    "id": 4456,
+    "title": "ثبت‌نام اسنپ‌پی؛ آموزش گام‌به‌گام و تصویری پذیرندگان",
+    "url": "https://academy.snapppay.ir/2026/07/27/snapppay-registration-guide/",
+    "sha256": "7fa4e3f38559c55925f5918a9901eb31f3d9c25914fe0c9c5dec5ee1fabcdb04"
+  },
+  {
+    "id": 3870,
+    "title": "بهترین زمان اجرای کمپین فروش",
+    "url": "https://academy.snapppay.ir/2026/07/11/campaign-timing-guide/",
+    "sha256": "165633fd006ebea7486536c9b8c98a8b3b069fca24248d005ae20a100d1ddd13"
+  },
+  {
+    "id": 3862,
+    "title": "چگونه کمپین تخفیف مؤثر طراحی کنیم؟",
+    "url": "https://academy.snapppay.ir/2026/07/11/design-sales-promotion/",
+    "sha256": "7f2342fd856bf315a892662f1de9c5ccb88999111a387a6b71321de201bbf4f1"
+  },
+  {
+    "id": 3805,
+    "title": "آموزش بهبود نرخ تبدیل محصولات سرچ",
+    "url": "https://academy.snapppay.ir/2026/07/07/boost-search-conversion/",
+    "sha256": "16840bc65ac4476322fb680ec8067f0fe8dfe88e8aaa3419b38a4f2a540ef3e4"
+  },
+  {
+    "id": 3617,
+    "title": "پرتال پذیرندگان اسنپ‌پی؛ آموزش کامل و راهنمای استفاده",
+    "url": "https://academy.snapppay.ir/2026/07/05/portal-snapppay/",
+    "sha256": "f9e6b0b99fd25a6e755e442c7b631a6735bc2ce209885563629d3a849f804dda"
+  },
+  {
+    "id": 3571,
+    "title": "پنل سرچ ادز اسنپ‌پی؛ آموزش کامل استفاده و اجرای تبلیغات",
+    "url": "https://academy.snapppay.ir/2026/06/30/snapppay-search-ads/",
+    "sha256": "b8cb1f296b9e6cd0bdcb822360c7e1510a547661e37a4d285450518cfe9be7a7"
+  },
+  {
+    "id": 3550,
+    "title": "تحلیل گزارش سرچ ادز اسنپ‌پی؛ راهنمای بررسی عملکرد تبلیغات",
+    "url": "https://academy.snapppay.ir/2026/06/30/searchads-report-analysis-guide/",
+    "sha256": "e428fb1916999eeaa7bc33c82d3b2de8004f76616bde1583a62a7f9d7b83a696"
+  },
+  {
+    "id": 3538,
+    "title": "تبلیغات سرچ یا پکیج‌های تبلیغاتی اسنپ‌پی؛ کدام را انتخاب کنیم؟",
+    "url": "https://academy.snapppay.ir/2026/06/30/snappi-search-ads-vs-packages/",
+    "sha256": "e9fa88e7a4b87e8ba52c4caee56ef2f1770410a22ef26d71a1fa2d982d497f78"
+  },
+  {
+    "id": 3529,
+    "title": "افزایش CTR محصولات؛ راهکارهای بهبود نرخ کلیک در سرچ اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/29/increase-ctr-products/",
+    "sha256": "06c4f80e1aa9c216a653dcee340cf1613f016eac9fab239576059b5dd14c1206"
+  },
+  {
+    "id": 3515,
+    "title": "خطاهای دیتافید محصولات؛ اشتباهات رایج و روش رفع آن‌ها",
+    "url": "https://academy.snapppay.ir/2026/06/29/datafeed-common-errors/",
+    "sha256": "a91a5688120ec7334393f81376591a8db3bcd0b2a1c27e19867e6d61b99a1858"
+  },
+  {
+    "id": 3514,
+    "title": "چرا محصولات در سرچ اسنپ‌پی نمایش داده نمی‌شوند؟",
+    "url": "https://academy.snapppay.ir/2026/06/29/products-not-showing/",
+    "sha256": "8d782b49a4c367cd81565bdb4a78cf41954c346d4264b9a25c755e93c5d84d3c"
+  },
+  {
+    "id": 3480,
+    "title": "تغییر در نحوه واریز مبالغ قراردادها",
+    "url": "https://academy.snapppay.ir/2026/06/27/payment-update/",
+    "sha256": "d665ab39fbc123931b57c5469d3f75c27820af4cf0db9d1ca7f12d68e270bb54"
+  },
+  {
+    "id": 3460,
+    "title": "انتخاب دسته‌بندی محصول؛ راهنمای دسته‌بندی صحیح محصولات در اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/22/snapppay-product-category-guide/",
+    "sha256": "8c2678131efa79fe867545653438ec0965357ea29dddcf4cc3a5552c93641c7c"
+  },
+  {
+    "id": 3452,
+    "title": "اصول انتخاب تصویر برای سرچ اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/22/snapppay-image-guide/",
+    "sha256": "84405df8d4427fde8a827eae9d21d71ff72d091107248fcace8306d3ed203312"
+  },
+  {
+    "id": 3445,
+    "title": "چطور توضیحات محصول بنویسیم که نرخ تبدیل را بالا ببرد؟",
+    "url": "https://academy.snapppay.ir/2026/06/22/product-description-conversion/",
+    "sha256": "0108d508b21f1420116b6cef7aa2fddf81044588565988881bd87116100f1582"
+  },
+  {
+    "id": 3416,
+    "title": "وب‌ از‌ تو | فروشگاه‌ساز همکار اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/20/shop-maker-webazto/",
+    "sha256": "179e2923372f01b9315f00ebbf0cb10d65a5805db1b758d7d4b7a77ba1319fb9"
+  },
+  {
+    "id": 3249,
+    "title": "هشدار کارت گارانتی جعلی آریاکیش | راهنمای تشخیص و اقدام برای پذیرندگان اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/16/fake-ariakish-warranty-guide/",
+    "sha256": "890e37d5c9b5a1d89d8fed231ef610807ace7268f46eedb84e4a36e6e8fdc2fe"
+  },
+  {
+    "id": 3010,
+    "title": "سازیتو | فروشگاه‌ساز همکار اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/14/shop-maker-sazito/",
+    "sha256": "dbe3e6bb7a76e8a2cbf64841114e74464c0755b287f2aa0741fe0063bce9b515"
+  },
+  {
+    "id": 3014,
+    "title": "سی‌فایو | فروشگاه‌ساز همکار اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/14/shop-maker-see5/",
+    "sha256": "d13313c7e1daa5261a02b485ef828986b308e6001f159b8e2e005d455e2caf7b"
+  },
+  {
+    "id": 3015,
+    "title": "شاپفا | فروشگاه‌ساز همکار اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/14/shop-maker-shopfa/",
+    "sha256": "4b607e7fac6195040d10d6c89ad8705918d7a110aa786e7a6bb9643643064711"
+  },
+  {
+    "id": 3027,
+    "title": "وبزی | فروشگاه‌ساز همکار اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/14/shop-maker-webzi/",
+    "sha256": "63c79de5272cc5b48fd67e2106274b985947feed34cd77a34d0916acfc883d79"
+  },
+  {
+    "id": 3020,
+    "title": "میکسین | فروشگاه‌ساز همکار اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/14/shop-maker-mixin/",
+    "sha256": "7fb8022972362b26b1ca242e9ee6c5191cf1c39f4026495bdfbafd10ec68f24d"
+  },
+  {
+    "id": 3005,
+    "title": "پرتال | فروشگاه‌ساز همکار اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/14/shop-maker-portal/",
+    "sha256": "9c312bec001fec39edec4d9d652a43041c45631fd444cde3c4ad3c68039ef9ff"
+  },
+  {
+    "id": 2988,
+    "title": "فروشگاه‌سازهای همکار اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/13/shop-makers/",
+    "sha256": "2f3ec213a3dbbce2f920695b3ea6cfbd3a2c61eb961f53c62880795b3da8a881"
+  },
+  {
+    "id": 3103,
+    "title": "کد تخفیف اسنپ‌پی؛ آموزش استفاده از Voucher Center برای پذیرندگان",
+    "url": "https://academy.snapppay.ir/2026/06/13/voucher-center/",
+    "sha256": "55cdc65583d77613e27b35852889106b6661fb932bdc67c598e365fe1f34f186"
+  },
+  {
+    "id": 2392,
+    "title": "Carousel چیست؟ تأثیر کروسل در تبلیغات و افزایش فروش",
+    "url": "https://academy.snapppay.ir/2026/06/10/carousel-ads-impact/",
+    "sha256": "687ea4e0d0db300cb07f4410aa8fe784e567c8403cd3eecb847c18848871c938"
+  },
+  {
+    "id": 2929,
+    "title": "راهنمای دریافت اطلاعات فنی فعال‌سازی درگاه اسنپ‌پی از طریق پرتال پذیرندگان (دسترسی درگاه)",
+    "url": "https://academy.snapppay.ir/2026/06/06/snapppay-gateway-tech-guide/",
+    "sha256": "528a595c3e60464719aa7582fa9a1acba9ebc3de92352473865517224de3044f"
+  },
+  {
+    "id": 2924,
+    "title": "چک‌لیست امنیت فنی فروشگاه اینترنتی؛ راهنمای اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/03/snapppay-security-checklist/",
+    "sha256": "83d693d86b1a2a5ed72339ee7afc6c6b420e7aeb04d35eb6fb11bcb6ed1605a3"
+  },
+  {
+    "id": 2917,
+    "title": "اهمیت حضور در وبینار آموزشی اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/03/%d8%a7%d9%87%d9%85%db%8c%d8%aa-%d8%ad%d8%b6%d9%88%d8%b1-%d8%af%d8%b1-%d9%88%d8%a8%db%8c%d9%86%d8%a7%d8%b1-%d8%a2%d9%85%d9%88%d8%b2%d8%b4%db%8c-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c-%d8%aa/",
+    "sha256": "eed1f43a37e561a8b7ee99940fa049c7501e9f16817ab970c92f9340b87da847"
+  },
+  {
+    "id": 2824,
+    "title": "تست درگاه اسنپ‌پی؛ چک‌لیست تست قبل از انتشار",
+    "url": "https://academy.snapppay.ir/2026/06/03/gateway-test-before-launch/",
+    "sha256": "77d59e5aa86dfefff8225c72db3d0da4c4fe291064db43d184701b3c64b0cc40"
+  },
+  {
+    "id": 2820,
+    "title": "خطاهای Callback چیست؟ راهنمای رفع خطاهای کال‌بک اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/03/callback-errors-fix/",
+    "sha256": "2f1777c8d66be42736ab38fc1d07e4bee078077620ebb03fcb62f36f8e0f1c6b"
+  },
+  {
+    "id": 2840,
+    "title": "الگوریتم نمایش محصولات در سرچ اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/03/snapppay-search-algorithm/",
+    "sha256": "7f49e85820e89c9ab96d940f2a97ead55b0e6f20cbcc20f4b0c7953d61f41ff7"
+  },
+  {
+    "id": 2791,
+    "title": "چطور سریع‌تر در اسنپ‌پی تأیید شویم؟",
+    "url": "https://academy.snapppay.ir/2026/06/03/get-approved-snapppay/",
+    "sha256": "ea72d1e430bbfca1ae268ff916c2b9b1db4710db71087660ac6c758516ea8794"
+  },
+  {
+    "id": 2836,
+    "title": "راهنمای خطاهای درگاه اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/06/02/gateway-error-monitoring/",
+    "sha256": "97272f11c1c31d3bddf1ee28a34f3002b744ae383742bc286819a8679d6a9610"
+  },
+  {
+    "id": 2828,
+    "title": "چگونه سرعت سایت روی نرخ تبدیل تأثیر می‌گذارد؟",
+    "url": "https://academy.snapppay.ir/2026/06/02/speed-conversion-impact/",
+    "sha256": "6a2324e641e4e261778bd918f5159f1fc2f4387a0799781222bd932a5f14f680"
+  },
+  {
+    "id": 2815,
+    "title": "تفاوت افزونه و اتصال اختصاصی چیست؟",
+    "url": "https://academy.snapppay.ir/2026/06/02/plugin-or-direct-connect/",
+    "sha256": "e451f45e7ce32f809f7aa1d85b0ab0c2d7ce1890e016e814fb4938cbe70edab4"
+  },
+  {
+    "id": 2810,
+    "title": "چک‌لیست آماده‌سازی فروشگاه قبل از فعال‌سازی",
+    "url": "https://academy.snapppay.ir/2026/06/02/store-activation-checklist/",
+    "sha256": "a6a4f2ff83a5b1f1661c65ea963f0437f15d598ddfb01a6244796f30a4790b04"
+  },
+  {
+    "id": 2797,
+    "title": "بعد از ثبت‌نام در اسنپ‌پی چه مراحلی پیش رو دارید؟",
+    "url": "https://academy.snapppay.ir/2026/06/02/snapppay-signup-steps/",
+    "sha256": "e031e6a3a1fe6e5407216027c12c3cdcce53fe73eafef7455f553856a449359f"
+  },
+  {
+    "id": 2796,
+    "title": "اشتباهات رایج پذیرندگان جدید در اسنپ‌پی | راهنمای عملی",
+    "url": "https://academy.snapppay.ir/2026/06/02/snappi-new-seller-mistakes/",
+    "sha256": "5e0e3be9bc32073251aff75c4b6a1e9f296c80c527167bd853b0ad36dcf70abd"
+  },
+  {
+    "id": 2779,
+    "title": "راهنمای ثبت تیکت پشتیبانی | نسخه آزمایشی ویژه پذیرندگان اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/05/31/ticketing/",
+    "sha256": "3d5f4ec570033e50289007e37459b8bd7c9cf965dec54531e8d9748483d4e739"
+  },
+  {
+    "id": 2742,
+    "title": "SSL چیست؟ راهنمای گواهی امنیتی SSL برای فروشگاه اینترنتی",
+    "url": "https://academy.snapppay.ir/2026/05/26/ssl-digital-shield/",
+    "sha256": "a2de503c1a4cd42088292dfd713bd975531d2aef3d1cf61582dfb3673675c4b2"
+  },
+  {
+    "id": 2712,
+    "title": "همکاری اسنپ‌پی با فروشگاه‌سازها؛ شرایط و نحوه همکاری",
+    "url": "https://academy.snapppay.ir/2026/05/26/join-as-site-builder/",
+    "sha256": "dd16f0f9b46a634e3c24b7b3aabc29bd4914449e81da200fb358ad713c44b818"
+  },
+  {
+    "id": 2596,
+    "title": "دریافت اینماد؛ راهنمای کامل دریافت نماد اعتماد الکترونیکی",
+    "url": "https://academy.snapppay.ir/2026/05/17/enamad-guide/",
+    "sha256": "bd497b1a06eab6db85253f1ed50f1f3fd6f0c311b50218dbfb8d9a0f8b1cbee9"
+  },
+  {
+    "id": 2400,
+    "title": "افزایش نرخ تبدیل؛ چگونه هر کلیک را به فرصت فروش تبدیل کنیم؟",
+    "url": "https://academy.snapppay.ir/2026/05/17/every-click-a-sale/",
+    "sha256": "4c287fe9c62b527bd3ea9d699484cec70e25af405b6afeb6fe3ccff88593e753"
+  },
+  {
+    "id": 2405,
+    "title": "بازاریابی دیجیتال چیست؟ راهنمای رشد فروشگاه‌های آنلاین",
+    "url": "https://academy.snapppay.ir/2026/05/17/snapppay-digital-marketing/",
+    "sha256": "22c46f54ae6f4885ea4fb1bcfefd8f8ba1d800ed17db916eb9aa198b33271dc9"
+  },
+  {
+    "id": 2406,
+    "title": "تبدیل مشتری ناراضی به مشتری وفادار؛ راهکارهای مدیریت نارضایتی",
+    "url": "https://academy.snapppay.ir/2026/05/17/unhappy-to-loyal/",
+    "sha256": "5572b34a0036e937ca2e647edd1fe569fa16f3ecc5fc2fc5b5dd61424765a543"
+  },
+  {
+    "id": 2407,
+    "title": "شناخت مشتری؛ چگونه با خرید اقساطی فروش بیشتری داشته باشیم؟",
+    "url": "https://academy.snapppay.ir/2026/05/17/know-customers-snapppay/",
+    "sha256": "9d71e20c576296d7dc373ef0cd8ce5957937c2c71fd8737fa9b553908271b347"
+  },
+  {
+    "id": 2414,
+    "title": "لجستیک فروشگاه اینترنتی؛ راهکارهای کاهش هزینه و افزایش رضایت مشتری",
+    "url": "https://academy.snapppay.ir/2026/05/17/fast-logistic-wins/",
+    "sha256": "60570394f47628ac45def9ccccfd37b8a8970d49bcef8218a6266392260f43fe"
+  },
+  {
+    "id": 2418,
+    "title": "تحلیل عملکرد فروش؛ شناسایی فرصت‌های جدید برای رشد کسب‌وکار",
+    "url": "https://academy.snapppay.ir/2026/05/17/sales-analysis-opportunities/",
+    "sha256": "6ef18f244a5d34332793f1b527e6c792cc154bfea36ba06fda4220cb075082ef"
+  },
+  {
+    "id": 2419,
+    "title": "بازاریابی شبکه‌های اجتماعی؛ چگونه از شبکه‌های اجتماعی فروش بگیریم؟",
+    "url": "https://academy.snapppay.ir/2026/05/17/social-beyond-ads/",
+    "sha256": "404aa6ae3fa356eacc94840b4df7ea9cca4e3284bffaa6b056dad446456048ab"
+  },
+  {
+    "id": 2426,
+    "title": "بهینه‌سازی سایت برای موبایل؛ راهنمای Mobile-Friendly کردن فروشگاه",
+    "url": "https://academy.snapppay.ir/2026/05/17/mobile-shop-guide/",
+    "sha256": "75c3f9a9a7dbff040e3a112ee8b876aff5b74cfdc674d2f96185fc107a8e153a"
+  },
+  {
+    "id": 2430,
+    "title": "هدف‌گیری مشتری و محصول؛ راهکارهای افزایش اثربخشی فروش",
+    "url": "https://academy.snapppay.ir/2026/05/17/precision-targeting/",
+    "sha256": "381d87b3274c28825e07f2793f4aa967efd49f69395929ba380c5b01e9e0ec93"
+  },
+  {
+    "id": 2434,
+    "title": "رهبر بازار رقابتی فروشندگان آنلاین باشید",
+    "url": "https://academy.snapppay.ir/2026/05/17/become-market-leader/",
+    "sha256": "679eda5c176ec666008445a76b75eeed12072043c69a07586ed25c07bedc8060"
+  },
+  {
+    "id": 2435,
+    "title": "راهکارهایی برای کاهش تعداد لغو سفارشات آنلاین",
+    "url": "https://academy.snapppay.ir/2026/05/17/reduce-cancellations/",
+    "sha256": "7211cfa02033437a55d14f153cefcd501742043c3dfd7dd8ad68c3743533b352"
+  },
+  {
+    "id": 2442,
+    "title": "کاهش هزینه کسب‌وکار آنلاین؛ راهکارهای افزایش بهره‌وری",
+    "url": "https://academy.snapppay.ir/2026/05/17/cut-costs-boost-gains/",
+    "sha256": "8b9df07f62863f690727ac8bce537e4af0d61b666c17b6ce3082203a167d22f6"
+  },
+  {
+    "id": 2446,
+    "title": "بهبود تجربه کاربری فروشگاه اینترنتی؛ راهکارهای کاربردی UX",
+    "url": "https://academy.snapppay.ir/2026/05/17/improve-shop-ux/",
+    "sha256": "2042445252ca6488627defe03771b1b64beb417a67d9643733c7bba8a5fa2de1"
+  },
+  {
+    "id": 2447,
+    "title": "با بهبود تجربه کاربری، فروشگاه آنلاین خود را به یک مقصد خرید جذاب تبدیل کنید",
+    "url": "https://academy.snapppay.ir/2026/05/17/ux-makes-destination/",
+    "sha256": "6816b93d0d4cf233021f69325a321149c7d49a3d5a16ae806525a77c295a4ec7"
+  },
+  {
+    "id": 2454,
+    "title": "مدیریت موجودی انبار؛ راهکارهای جلوگیری از کمبود و مازاد کالا",
+    "url": "https://academy.snapppay.ir/2026/05/17/inventory-drives-revenue/",
+    "sha256": "5584bcd5b1a380f498cf9bbd8319733bb02ce820cb5bbafd9ec904b92441a958"
+  },
+  {
+    "id": 2458,
+    "title": "حریم خصوصی مشتریان؛ اصول حفظ اطلاعات کاربران در فروشگاه اینترنتی",
+    "url": "https://academy.snapppay.ir/2026/05/17/privacy-equals-trust/",
+    "sha256": "c256053dfd4063c1dd659b270e7cb5e2202fbe9da0bcac17ebd26e1ed5e2e6ba"
+  },
+  {
+    "id": 2462,
+    "title": "چگونه با استفاده از سرویس اعتباری فروش بیشتری داشته باشیم؟",
+    "url": "https://academy.snapppay.ir/2026/05/17/sell-more-with-credit/",
+    "sha256": "566d0450a9f9bd2fe4fd067ab49c15689b5725036e21b630f81eb5fd0f8ffd91"
+  },
+  {
+    "id": 2466,
+    "title": "تحلیل رفتار کاربران چیست؟ راهنمای شناخت رفتار مشتری در فروشگاه آنلاین",
+    "url": "https://academy.snapppay.ir/2026/05/17/analyze-user-behavior/",
+    "sha256": "ebbca0197e3ddfb9864cd9436578509eddb9d068c7c3549617800f3f93c8f7be"
+  },
+  {
+    "id": 2470,
+    "title": "راهکارهای بهبود تجربه و رضایت مشتری، پشتیبانی مشتری چیست؟",
+    "url": "https://academy.snapppay.ir/2026/05/17/support-reflects-brand/",
+    "sha256": "aeb20856c7bc3089907c467a91a8bfa975eabf2c4b24d7d376e80bea3df65adf"
+  },
+  {
+    "id": 2479,
+    "title": "ابزارهای ضروری کسب‌وکار آنلاین؛ معرفی ابزارهای کاربردی",
+    "url": "https://academy.snapppay.ir/2026/05/17/master-modern-tools/",
+    "sha256": "7e56356764af090d0583a8b037231409187501994503f1d37e5f981711c769f0"
+  },
+  {
+    "id": 2475,
+    "title": "سئو چیست؟ راهنمای سئو فروشگاه اینترنتی برای رشد پایدار",
+    "url": "https://academy.snapppay.ir/2026/05/17/seo-growth-plan/",
+    "sha256": "a49e67699bce8e6f5b8d603e6cf318dcbe688419cf90eb8cfefc62dce0fed48d"
+  },
+  {
+    "id": 2486,
+    "title": "ارتباط با مشتری؛ راهکارهای ایجاد اعتماد و افزایش وفاداری",
+    "url": "https://academy.snapppay.ir/2026/05/17/trust-through-talk/",
+    "sha256": "26d2b5ad98a18e1d62f9bf880a64cfef08db4c59f00ab9ecfde6509ba7836ab5"
+  },
+  {
+    "id": 2487,
+    "title": "سفر مشتری چیست؟ راهنمای طراحی Customer Journey برای فروشگاه آنلاین",
+    "url": "https://academy.snapppay.ir/2026/05/17/customer-journey-key/",
+    "sha256": "d4534392277f24733e14a9a202aa40e1c647c93dd944fc37c857fbc47ddf84fe"
+  },
+  {
+    "id": 2491,
+    "title": "بازاریابی محتوا چیست؟ راهنمای جذب و هدایت مشتری تا خرید",
+    "url": "https://academy.snapppay.ir/2026/05/17/content-to-customer/",
+    "sha256": "f8fbeb46646c6c7552568f680fd25b91c72215bad2c34aeb1f7a877861dbdd1b"
+  },
+  {
+    "id": 2495,
+    "title": "تحلیل داده مشتریان؛ چگونه تصمیم‌های بهتری برای فروش بگیریم؟",
+    "url": "https://academy.snapppay.ir/2026/05/17/data-driven-decisions/",
+    "sha256": "d21408a82e9319ab298ba80d48f550ec55c4c8568c9975776f99f4096aea096a"
+  },
+  {
+    "id": 2499,
+    "title": "اتوماسیون بازاریابی و فروش؛ راهکارهای کاهش هزینه و زمان",
+    "url": "https://academy.snapppay.ir/2026/05/17/stop-wasting-money-time/",
+    "sha256": "667a82937fde180e65055ce54090a14fd0bcc32dceaa707ea51e8f034f45e756"
+  },
+  {
+    "id": 2506,
+    "title": "امنیت فروشگاه اینترنتی؛ راهکارهای ایجاد اعتماد و شفافیت",
+    "url": "https://academy.snapppay.ir/2026/05/17/trust-in-online-shop/",
+    "sha256": "9b1de4632315aca746515ecc63d13c8938bee66a99507107d4eaf7243c98c5b3"
+  },
+  {
+    "id": 2512,
+    "title": "جذب مشتری بالقوه؛ روش‌های تبدیل بازدیدکننده به خریدار",
+    "url": "https://academy.snapppay.ir/2026/05/17/convert-leads/",
+    "sha256": "6c9f7e51242644afb2ad06377819697c15111186bc44dd35b9b7780689470c85"
+  },
+  {
+    "id": 2507,
+    "title": "کالاهای ممنوعه در اسنپ‌پی؛ چه محصولاتی را نمی‌توان فروخت؟",
+    "url": "https://academy.snapppay.ir/2026/05/17/prohibitedgoods/",
+    "sha256": "45f72a732669064153cf92985f79f08b3c10eff63d5f96f713b7273629db1e94"
+  },
+  {
+    "id": 2003,
+    "title": "Sitemap چیست؟ راهنمای ساخت و ثبت نقشه سایت در گوگل",
+    "url": "https://academy.snapppay.ir/2026/05/10/%d8%b3%d8%a7%db%8c%d8%aa-%d9%85%d9%be/",
+    "sha256": "0d3dc8117a7954b56670e16baa60c2db22cdff5d68adf274fedbc6045af312fc"
+  },
+  {
+    "id": 1991,
+    "title": "سرچ اسنپ‌پی؛ راهنمای نام‌گذاری محصولات و جمع‌آوری اطلاعات",
+    "url": "https://academy.snapppay.ir/2026/05/10/search/",
+    "sha256": "61a50b9de96d22dc53f359d2361c5bee34ce9ede4ab45dc1ae21db837e4b44e6"
+  },
+  {
+    "id": 1415,
+    "title": "تشخیص تکنولوژی سایت؛ آموزش تصویری و معرفی سایت‌سازهای ایرانی",
+    "url": "https://academy.snapppay.ir/2026/05/09/website-cms/",
+    "sha256": "0eacfbd6429d060a0e69e4ba113a9f3ff1efe23fa231a6933e942b2654dd2f2e"
+  },
+  {
+    "id": 1948,
+    "title": "فسخ قرارداد با اسنپ‌پی؛ شرایط و نحوه ثبت درخواست",
+    "url": "https://academy.snapppay.ir/2026/05/06/contract-termination/",
+    "sha256": "ffa6b17d878508abb3f425aa63ba4d3d6c160ddb9a3faa6dc2a41efe7fc787ee"
+  },
+  {
+    "id": 1923,
+    "title": "افزونه سرچ اسنپ‌پی؛ آموزش نمایش محصولات در جست‌وجو",
+    "url": "https://academy.snapppay.ir/2026/05/04/search-plugin/",
+    "sha256": "72999631968158412235a87fe1c07aea12cd694d59f324b5056fb6ce4b5837a8"
+  },
+  {
+    "id": 1917,
+    "title": "مشکلات و خطاهای ثبت‌نام اسنپ‌پی؛ راهنمای عیب‌یابی",
+    "url": "https://academy.snapppay.ir/2026/05/04/signup/",
+    "sha256": "a122f268b47b810ba82be7469de281552f29e8e42341f7821efbea444454511b"
+  },
+  {
+    "id": 1588,
+    "title": "سامانه مودیان؛ الزامات صدور صورتحساب برای پذیرندگان اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/04/29/tax/",
+    "sha256": "cb16271d747a7f7ae575bb906666fbb94d666d7195ccd7b6d8a27c25376aa958"
+  },
+  {
+    "id": 1563,
+    "title": "دریافت پیامک‌های اطلاع‌رسانی اسنپ‌پی؛ راهنمای پذیرندگان",
+    "url": "https://academy.snapppay.ir/2026/04/28/sms/",
+    "sha256": "1348d28b6de4fe6cc5c1e3314770d63a2c82119269b66da5f95e0aa0b40ce929"
+  },
+  {
+    "id": 1524,
+    "title": "راهنمای ویرایش و رفع مشکل درخواست ثبت نام",
+    "url": "https://academy.snapppay.ir/2026/04/25/%d9%86%d8%ad%d9%88%d9%87-%d9%88%db%8c%d8%b1%d8%a7%db%8c%d8%b4-%d8%a7%d8%b7%d9%84%d8%a7%d8%b9%d8%a7%d8%aa-%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d8%ab%d8%a8%d8%aa%d9%86%d8%a7%d9%85/",
+    "sha256": "a8d40a42284e84351e55645a5eb6bab1dd29d4dddd5269882a1e76ca8f3f83d0"
+  },
+  {
+    "id": 1428,
+    "title": "قرارداد ویژه اسنپ‌پی؛ دروازه ورود به فروش بیشتر و تسویه هوشمندتر",
+    "url": "https://academy.snapppay.ir/2026/04/25/%d9%82%d8%b1%d8%a7%d8%b1%d8%af%d8%a7%d8%af-%d9%88%db%8c%da%98%d9%87-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c%d8%9b-%d8%af%d8%b1%d9%88%d8%a7%d8%b2%d9%87-%d9%88%d8%b1%d9%88%d8%af-%d8%a8%d9%87/",
+    "sha256": "0cab739e7a1109e2b5fcc0c5ecaeedd1fadcef31d260639f05e4736d1e5d1b4a"
+  },
+  {
+    "id": 1371,
+    "title": "سیستم امتیازدهی و سطح‌بندی پذیرندگان اسنپ‌پی؛ راهنمای ارزیابی عملکرد",
+    "url": "https://academy.snapppay.ir/2026/04/22/sop-%d8%b3%db%8c%d8%b3%d8%aa%d9%85-%d8%a7%d9%85%d8%aa%db%8c%d8%a7%d8%b2%d8%af%d9%87%db%8c-%d9%88-%d8%b3%d8%b7%d8%ad%d8%a8%d9%86%d8%af%db%8c-%d9%be%d8%b0%db%8c%d8%b1%d9%86%d8%af%da%af%d8%a7/",
+    "sha256": "a4dd6f473c098d2739121c8acf0bfb025fafc7d3c273f83b430c86ab6f3c967b"
+  },
+  {
+    "id": 1368,
+    "title": "شرایط فعال‌سازی پذیرنده در اپلیکیشن و جست‌وجوی اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/04/22/%d8%b4%d8%b1%d8%a7%db%8c%d8%b7-%d9%88-%d9%82%d9%88%d8%a7%d9%86%db%8c%d9%86-%d9%81%d8%b9%d8%a7%d9%84%d8%b3%d8%a7%d8%b2%db%8c-%d9%be%d8%b0%db%8c%d8%b1%d9%86%d8%af%d9%87-%d8%af%d8%b1-%d8%a7/",
+    "sha256": "628d93a92c4bfc073d61ea8ed45d44d2c37f9950e492153271b93e843cfa8bb2"
+  },
+  {
+    "id": 1300,
+    "title": "راه‌اندازی و فعال‌سازی سرویس خرید اقساطی اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/04/21/activation/",
+    "sha256": "62b71f9f6b65efa0720f99665e91bf3d8c02f02b7fa4c8c832f3ba660ea64de1"
+  },
+  {
+    "id": 1296,
+    "title": "هوش مصنوعی برای افزایش فروش؛ راهنمای عملی ویژه پذیرندگان",
+    "url": "https://academy.snapppay.ir/2026/04/21/%d8%b1%d8%a7%d9%87%d9%86%d9%85%d8%a7%db%8c-%d8%b9%d9%85%d9%84%db%8c-%d9%87%d9%88%d8%b4-%d9%85%d8%b5%d9%86%d9%88%d8%b9%db%8c-%d8%a8%d8%b1%d8%a7%db%8c-%d8%a7%d9%81%d8%b2%d8%a7%db%8c%d8%b4-%d9%81%d8%b1/",
+    "sha256": "c222cdddc724acf71337627889c24ee967663ca81caf7f455fcb0cbceed39a85"
+  },
+  {
+    "id": 1257,
+    "title": "مسیر پذیرندگی در اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/04/21/%d9%85%d8%b3%db%8c%d8%b1-%d9%be%d8%b0%db%8c%d8%b1%d9%86%d8%af%da%af%db%8c-%d8%af%d8%b1-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c/",
+    "sha256": "929965da12d9a1cda46c5039d557447b840d2691c02d11730cc1f5134dcdc711"
+  },
+  {
+    "id": 1198,
+    "title": "محاسبه فروش و کمیسیون اسنپ‌پی؛ راهنمای محاسبه و بررسی",
+    "url": "https://academy.snapppay.ir/2026/04/20/%d8%b1%d8%a7%d9%87%d9%86%d9%85%d8%a7%db%8c-%d9%85%d8%ad%d8%a7%d8%b3%d8%a8%d9%87-%d9%81%d8%b1%d9%88%d8%b4-%d9%88-%da%a9%d9%85%db%8c%d8%b3%db%8c%d9%88%d9%86-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c/",
+    "sha256": "2bcf98b4c2a5f35c2b2ae4889660ed7257b21ff8b1f94d9e95d520ecb04ef24e"
+  },
+  {
+    "id": 1154,
+    "title": "سوالات متداول اسنپ‌پی؛ پاسخ به پرسش‌های پذیرندگان",
+    "url": "https://academy.snapppay.ir/2026/04/20/%d8%b3%d9%88%d8%a7%d9%84%d8%a7%d8%aa-%d9%85%d8%aa%d8%af%d8%a7%d9%88%d9%84-%d8%ab%d8%a8%d8%aa%d9%86%d8%a7%d9%85-%d9%be%d8%b0%db%8c%d8%b1%d9%86%d8%af%da%af%d8%a7%d9%86/",
+    "sha256": "ca54aa7027342a573be64580314eb4a15cc1641635c65ad4f174c0493fae99e2"
+  },
+  {
+    "id": 1080,
+    "title": "دلایل رد شدن ثبت‌نام اسنپ‌پی برای فروشگاه‌های آنلاین و حضوری",
+    "url": "https://academy.snapppay.ir/2026/04/19/reject/",
+    "sha256": "3375616e0b5af884c0b9599e9b640e74a5f78d85369b016b44e1ccec2eec9521"
+  },
+  {
+    "id": 1003,
+    "title": "پکیج‌های تبلیغاتی اسنپ‌پی؛ معرفی و شرایط استفاده",
+    "url": "https://academy.snapppay.ir/2026/04/18/%d9%be%da%a9%db%8c%d8%ac%d9%87%d8%a7%db%8c-%d8%aa%d8%a8%d9%84%db%8c%d8%ba%d8%a7%d8%aa%db%8c-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c-%d8%a7%d8%b1%d8%af%db%8c%d8%a8%d9%87%d8%b4%d8%aa/",
+    "sha256": "a637c89d0dc2ac49c2bd08a71f5f891832db9267dc8f4d267794cff6d08a9f58"
+  },
+  {
+    "id": 905,
+    "title": "فعال‌سازی درگاه اقساطی اسنپ‌پی برای سایت‌های طرف قرارداد",
+    "url": "https://academy.snapppay.ir/2026/04/11/%d9%81%d8%b9%d8%a7%d9%84-%d8%b4%d8%af%d9%86-%d8%af%d8%b1%da%af%d8%a7%d9%87-%d8%a7%d9%82%d8%b3%d8%a7%d8%b7%db%8c-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c-%d8%a8%d8%b1%d8%a7%db%8c-%d8%aa%d9%85/",
+    "sha256": "6a2176ac73873d479467ee8c7e1819a437614100ce0fe96d6280008c2a192661"
+  },
+  {
+    "id": 883,
+    "title": "نحوه دریافت و اعلام ip پذیرنده به اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/04/07/%d9%86%d8%ad%d9%88%d9%87-%d8%af%d8%b1%db%8c%d8%a7%d9%81%d8%aa-%d9%88-%d8%a7%d8%b9%d9%84%d8%a7%d9%85-ip-%d9%be%d8%b0%db%8c%d8%b1%d9%86%d8%af%d9%87-%d8%a8%d9%87-%d8%a7%d8%b3%d9%86%d9%be%d9%be/",
+    "sha256": "19df0269a87d03109c2860cfc3ce8ccd530a8db03c5b19cdc0b077e28a4bd855"
+  },
+  {
+    "id": 814,
+    "title": "تغییر آدرس و کدپستی فروشگاه در اسنپ‌پی؛ راهنمای به‌روزرسانی",
+    "url": "https://academy.snapppay.ir/2026/04/05/%da%86%da%af%d9%88%d9%86%d9%87-%d9%86%d8%b4%d8%a7%d9%86%db%8c-%d9%88-%da%a9%d8%af%d9%be%d8%b3%d8%aa%db%8c-%d9%81%d8%b1%d9%88%d8%b4%da%af%d8%a7%d9%87-%d8%ae%d9%88%d8%af-%d8%b1%d8%a7-%d8%af%d8%b1-%d8%a7/",
+    "sha256": "2f1915e336889e8478a941bbe7765f33131e53cf2d9271ca81c876cfb66d36f6"
+  },
+  {
+    "id": 790,
+    "title": "تغییر Callback چیست؟ راهنمای اطلاع‌رسانی تغییر کال‌بک به اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/03/18/%d8%aa%d8%ba%db%8c%db%8c%d8%b1-%da%a9%d8%a7%d9%84%d8%a8%da%a9-%da%86%db%8c%d8%b3%d8%aa-%d9%88-%da%86%da%af%d9%88%d9%86%d9%87-%d8%a8%d8%a7%db%8c%d8%af-%d8%a2%d9%86-%d8%b1%d8%a7-%d8%a7%d8%b7/",
+    "sha256": "1b5237ca6b4a127212c940efb8caedb2540e0727b2f9b27349b14ca58995cd6f"
+  },
+  {
+    "id": 770,
+    "title": "تغییر CMS فروشگاه؛ مراحل هماهنگی با اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/03/17/%d8%aa%d8%ba%db%8c%db%8c%d8%b1-cms-%d9%88-%d9%87%d9%85%d8%a7%d9%87%d9%86%da%af%db%8c-%d8%a8%d8%a7-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c/",
+    "sha256": "833aba8fbe85e57445729599797da8f3d0ae4e5a23ed51436029c66bbb854606"
+  },
+  {
+    "id": 771,
+    "title": "IP چیست؟ کاربرد IP و اهمیت آن در اتصال به اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/03/17/%d8%a2%db%8c%d9%be%db%8c-%da%86%db%8c%d8%b3%d8%aa-%d9%88-%da%86%d9%87-%da%a9%d8%a7%d8%b1%db%8c-%d9%85%db%8c%da%a9%d9%86%d8%af%d8%9f/",
+    "sha256": "60995a2f107f04eb3d90ae41056daca4cdc002e9e229e9c2a8e50ddaabb8b62b"
+  },
+  {
+    "id": 772,
+    "title": "معیارهای حذف هوشمند پذیرندگان؛ بهینه‌سازی شبکه پذیرندگان",
+    "url": "https://academy.snapppay.ir/2026/03/17/%d8%ad%d8%b0%d9%81-%d9%87%d9%88%d8%b4%d9%85%d9%86%d8%af-%d8%a8%d8%b1-%d8%a7%d8%b3%d8%a7%d8%b3-%d8%b4%d8%a7%d8%ae%d8%b5%d9%87%d8%a7%db%8c-%da%a9%d9%84%db%8c%d8%af%db%8c-%d8%b9%d9%85%d9%84/",
+    "sha256": "95851ce90c4b89139bb5bb5ca795b6697b4871f52734809676cb6094e5329f84"
+  },
+  {
+    "id": 721,
+    "title": "مغایرت پرداخت در اسنپ‌پی؛ راهنمای بررسی و پیگیری",
+    "url": "https://academy.snapppay.ir/2026/03/16/%d8%a7%d9%87%d9%85%db%8c%d8%aa-%d9%82%db%8c%d9%85%d8%aa%da%af%d8%b0%d8%a7%d8%b1%db%8c-%d9%88-%d9%86%d8%b8%d8%a7%d8%b1%d8%aa-%d8%a8%d8%b1-%d9%85%d8%ba%d8%a7%db%8c%d8%b1%d8%aa%d9%87/",
+    "sha256": "6d718f205117eff8c25ff7ded8bc3fe40048607cf0399508438f4a157f57ee7e"
+  },
+  {
+    "id": 617,
+    "title": "فرم‌های درخواست اسنپ‌پی؛ لیست و راهنمای تکمیل فرم‌ها",
+    "url": "https://academy.snapppay.ir/2026/03/15/snapppay-forms-list/",
+    "sha256": "2b48f71777a24657ca3210c0cd4ef10f4dee4740253c33c76c5313c6997abd55"
+  },
+  {
+    "id": 705,
+    "title": "مدارک و شرایط ثبت‌نام اسنپ‌پی؛ راهنمای احراز هویت پذیرندگان",
+    "url": "https://academy.snapppay.ir/2026/03/15/%d8%b4%d8%b1%d8%a7%db%8c%d8%b7-%d8%a7%d8%ad%d8%b1%d8%a7%d8%b2-%d9%87%d9%88%db%8c%d8%aa-%d9%88-%d9%85%d8%af%d8%a7%d8%b1%da%a9-%d9%85%d9%88%d8%b1%d8%af-%d9%86%db%8c%d8%a7%d8%b2-%d8%ab%d8%a8%d8%aa-%d9%86/",
+    "sha256": "260c42a9d4b79483ca3683e01be793d8ba997ece32f83ab8a527f5e5fc596350"
+  },
+  {
+    "id": 702,
+    "title": "مزایای اسنپ‌پی برای کسب‌وکارها؛ راهنمای رشد فروش",
+    "url": "https://academy.snapppay.ir/2026/03/15/%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c-%d8%a7%d9%86%d8%aa%d8%ae%d8%a7%d8%a8%db%8c-%d9%87%d9%88%d8%b4%d9%85%d9%86%d8%af%d8%a7%d9%86%d9%87-%d8%a8%d8%b1%d8%a7%db%8c-%d8%b1%d8%b4%d8%af-%da%a9%d8%b3/",
+    "sha256": "d4fc400a3e8d77f3691b2120b0e98e498c88880265fa1dcf868de710e566c596"
+  },
+  {
+    "id": 603,
+    "title": "افزونه (پلاگین) درگاه اقساطی اسنپ‌پی؛ آموزش نصب و فعال‌سازی",
+    "url": "https://academy.snapppay.ir/2026/03/03/%d8%a7%d9%81%d8%b2%d9%88%d9%86%d9%87-%d9%81%d8%b9%d8%a7%d9%84%d8%b3%d8%a7%d8%b2%db%8c-%d8%af%d8%b1%da%af%d8%a7%d9%87-%d8%a7%d9%82%d8%b3%d8%b7%db%8c-%d8%a7%d8%b3%d9%86%d9%be%d9%be/",
+    "sha256": "66e062cf74a937f44b52e0182e6b1cb3da965a5f1da25980e4c4b3ae0ae98551"
+  },
+  {
+    "id": 597,
+    "title": "راهنمای طراحی بنر فروشگاهی برای پذیرندگان اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/02/24/%d8%b1%d8%a7%d9%87%d9%86%d9%85%d8%a7%db%8c-%d8%b7%d8%b1%d8%a7%d8%ad%db%8c-%d8%a8%d9%86%d8%b1%d9%87%d8%a7%db%8c-%d9%81%d8%b1%d9%88%d8%b4%da%af%d8%a7%d9%87%db%8c-%d8%af%d8%b1-%d8%a7%d8%b3%d9%86%d9%be/",
+    "sha256": "2daf7a5aa45121c31725d8cca963cd2b2d2d8a5f0f4d0b6a7468449bef125254"
+  },
+  {
+    "id": 594,
+    "title": "انتخاب تصویر محصول؛ چه عکس‌هایی باعث افزایش فروش می‌شوند؟",
+    "url": "https://academy.snapppay.ir/2026/02/24/best-images-for-selling/",
+    "sha256": "426eb68cdee4554e142c7824d5f1c29b6b6d0027d4188823ef674914becb5cb1"
+  },
+  {
+    "id": 582,
+    "title": "ثبت نام در وبینار آنلاین اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/02/24/%d8%ab%d8%a8%d8%aa-%d9%86%d8%a7%d9%85-%d8%af%d8%b1-%d9%88%d8%a8%db%8c%d9%86%d8%a7%d8%b1-%d8%a2%d9%86%d9%84%d8%a7%db%8c%d9%86-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c/",
+    "sha256": "fa707bf52fd5578a10b50343407494ae2b5ef5935856faf0a5b3e3c008a9cb98"
+  },
+  {
+    "id": 577,
+    "title": "ویرایش، به‌روزرسانی و لغو سفارش در اسنپ‌پی",
+    "url": "https://academy.snapppay.ir/2026/02/24/%da%86%da%af%d9%88%d9%86%d9%87-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4-%d8%ae%d8%b1%db%8c%d8%af%d8%a7%d8%b1%db%8c%d8%b4%d8%af%d9%87-%d8%a8%d8%a7-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c-%d8%b1/",
+    "sha256": "34ef96dffbcad56d512b56e3b1d03c6211d68c948ee138e4ef6eaeab6598e619"
+  },
+  {
+    "id": 572,
+    "title": "پشتیبانی پذیرندگان اسنپ‌پی؛ راه‌های ارتباط و دریافت پشتیبانی",
+    "url": "https://academy.snapppay.ir/2026/02/24/%d9%be%d8%b4%d8%aa%db%8c%d8%a8%d8%a7%d9%86%db%8c-%d9%be%d8%b0%db%8c%d8%b1%d9%86%d8%af%da%af%d8%a7%d9%86-%d8%a7%d8%b3%d9%86%d9%be%d9%be%db%8c/",
+    "sha256": "68cfc23d7abb75847a525158538c53efc219596f1ec1a62a9919eef72263a819"
+  },
+  {
+    "id": 560,
+    "title": "خرید اعتباری چیست و چه مزایایی برای فروشگاه دارد؟",
+    "url": "https://academy.snapppay.ir/2026/02/24/%da%86%d8%b1%d8%a7-%d8%a8%d8%a7%db%8c%d8%af-%d8%a7%d8%b2-%d8%b3%d8%b1%d9%88%db%8c%d8%b3-%d8%ae%d8%b1%db%8c%d8%af-%d8%a7%d8%b9%d8%aa%d8%a8%d8%a7%d8%b1%db%8c-%d8%a7%d8%b3%d8%aa%d9%81%d8%a7%d8%af%d9%87/",
+    "sha256": "677c29091c50d74d3e1dc554c0ace1f6909fbbf9b302f434d84a43fc0c0f1f55"
+  },
+  {
+    "id": 6466,
+    "title": "مستندات فنی پیاده‌سازی اختصاصی (سلف)",
+    "url": "https://academy.snapppay.ir/self-cms/",
+    "sha256": "fc73481044c4f3417b8d8445342bfd1fe37c3e4c5b2b1e19edf14eddde9f8fd0"
+  },
+  {
+    "id": 4274,
+    "title": "پروفایل من",
+    "url": "https://academy.snapppay.ir/academy-profile/",
+    "sha256": "807dcd7fd3a6e76b9ba5e9cb36eecc2c5fe0a97c25ff67d3a0a93ac9f21f7f99"
+  },
+  {
+    "id": 4273,
+    "title": "مسیرهای من",
+    "url": "https://academy.snapppay.ir/academy-paths/",
+    "sha256": "807dcd7fd3a6e76b9ba5e9cb36eecc2c5fe0a97c25ff67d3a0a93ac9f21f7f99"
+  },
+  {
+    "id": 4272,
+    "title": "پنل آکادمی",
+    "url": "https://academy.snapppay.ir/academy-dashboard/",
+    "sha256": "ad6e69b5aca1fc64659013e47d1fd54435c5855b2c84be9d885dc9c8d98f598c"
+  },
+  {
+    "id": 4271,
+    "title": "ورود آکادمی",
+    "url": "https://academy.snapppay.ir/academy-login/",
+    "sha256": "a05de62eddbb2cf4dc4c47689334b65fc6cf4bff2c1e6173a4499ab71f322736"
+  },
+  {
+    "id": 3190,
+    "title": "مرکز آموزش پذیرندگان",
+    "url": "https://academy.snapppay.ir/",
+    "sha256": "4a15a426f7894a947ebb44370dc27dd8303db39ab6cdf78d9f5deb5294f51477"
+  },
+  {
+    "id": 941,
+    "title": "Password Reset",
+    "url": "https://academy.snapppay.ir/password-reset/",
+    "sha256": "0aee236fcef76369540732760b31501c40faf7c73dfbbbbcda3bd316fc79a599"
+  },
+  {
+    "id": 940,
+    "title": "Login",
+    "url": "https://academy.snapppay.ir/login/",
+    "sha256": "9e85d5cc7f6dac245823988cf8deed615bf2bcbc6ed0a7f2f7ee64df915b58fb"
+  },
+  {
+    "id": 845,
+    "title": "ثبت نام فروشگاه",
+    "url": "https://academy.snapppay.ir/merchant-acquisition/",
+    "sha256": "21211fa3fdd2fb3dd0e47391611e07dbb843932881c1ef3efa2518c2fc463353"
+  },
+  {
+    "id": 768,
+    "title": "تماس با ما",
+    "url": "https://academy.snapppay.ir/contact-us/",
+    "sha256": "ce959e7e7488ceaee0bee8a5ca7bba854b2b844b26c2acfe314b91e060bcc642"
+  },
+  {
+    "id": 258,
+    "title": "blog",
+    "url": "https://academy.snapppay.ir/blog/",
+    "sha256": "e6b7e9605329215a1f945e1e4babc84e371adfe2398282981cc59cd1eb925f38"
+  },
+  {
+    "id": 7,
+    "title": "home",
+    "url": "https://academy.snapppay.ir/home/",
+    "sha256": "8b6a14cddfcd6fbc2721c7a68434abaf5072d6c49efc426c42452177e2a41568"
+  },
+  {
+    "id": 3,
+    "title": "Sample Page",
+    "url": "https://academy.snapppay.ir/sample-page/",
+    "sha256": "763b827af025d758fce1661fad4ee8cfd2d57df56d67a680905c79152ae3909f"
+  }
+]

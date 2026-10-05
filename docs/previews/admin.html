@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>.sp-card,.sp-admin{--sp-ink:#182a3a;--sp-muted:#5b6f82;--sp-accent:#087faa;--sp-line:#dce6ed;color:var(--sp-ink);font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;box-sizing:border-box}.sp-card *,.sp-admin *{box-sizing:border-box}.sp-card{max-width:480px;margin:24px auto;padding:30px;border:1px solid var(--sp-line);border-radius:22px;background:linear-gradient(155deg,#effaff 0,#fff 45%);box-shadow:0 12px 40px #153f5710;text-align:start}.sp-brand{display:flex;align-items:center;gap:12px;font-weight:750;font-size:20px}.sp-mark{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:13px;background:var(--sp-accent);color:white;font-weight:800;font-size:24px}.sp-tag{margin-inline-start:auto;border:1px solid #b8ddea;border-radius:50px;padding:4px 9px;font-size:11px;letter-spacing:.08em;color:#087397}.sp-card h3{font-size:23px;line-height:1.5;margin:25px 0 8px}.sp-description{color:var(--sp-muted);line-height:1.8;white-space:pre-line;overflow-wrap:anywhere}.sp-card label{display:block;font-size:13px;font-weight:650;margin:24px 0 8px}.sp-card input[type=tel],.sp-admin input{display:block;width:100%;background:#fff;border:1px solid #b8cbd8;border-radius:10px;padding:12px 14px;font:inherit;color:var(--sp-ink)}.sp-button{display:flex;justify-content:center;align-items:center;gap:15px;width:100%;padding:14px 18px;margin-top:16px;border:0;border-radius:11px;background:var(--sp-accent);color:white!important;font:600 15px system-ui;text-decoration:none!important;cursor:pointer}.sp-button:hover{background:#066b90}.sp-card :focus-visible,.sp-admin :focus-visible{outline:3px solid #f1b63a;outline-offset:3px}.sp-card small{display:block;color:var(--sp-muted);font-size:12px;line-height:1.7;margin-top:18px}.sp-page{background:#f2f6f9;min-height:100vh;display:grid;place-items:center;margin:0;padding:20px}.sp-page .sp-card{width:100%}.sp-admin{max-width:1280px;margin:20px auto}.sp-admin h1{font-size:30px;margin-bottom:5px;letter-spacing:-.03em}.sp-subtitle{color:var(--sp-muted);line-height:1.6}.sp-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:25px 0}.sp-metric{padding:20px;background:#f7fbfd;border:1px solid var(--sp-line);border-radius:15px}.sp-metric strong{display:block;font-size:25px;margin:6px 0}.sp-toolbar{display:flex;gap:12px;align-items:end;margin:22px 0}.sp-toolbar label{flex:1}.sp-admin .sp-button{width:auto;margin:0;padding:10px 15px;font-size:13px}.sp-scroll{overflow:auto;border:1px solid var(--sp-line);border-radius:14px}.sp-admin table{width:100%;border-collapse:collapse;white-space:nowrap}.sp-admin th,.sp-admin td{padding:15px 16px;text-align:start;border-bottom:1px solid var(--sp-line)}.sp-admin th{background:#f3f8fb;color:var(--sp-muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em}.sp-state{display:inline-block;border-radius:40px;padding:5px 10px;background:#eaf1f6;font-size:12px;font-weight:600}.sp-state-paid{background:#def5e9;color:#196840}.sp-state-review,.sp-state-token_unknown{background:#fff0d8;color:#805015}.sp-state-cancelled,.sp-state-reverted{background:#fbe8e9;color:#963d46}.sp-actions{display:flex;gap:8px;align-items:center}.sp-notice{padding:18px;border:1px solid #b8ddea;border-radius:12px;background:#f0faff;margin:18px 0;line-height:1.7}.sp-admin details{margin:20px 0}.sp-admin summary{font-weight:650;cursor:pointer}.sp-pagination{display:flex;justify-content:space-between;margin:18px 0}.sp-admin code{font-size:11px}.sp-check{display:flex;gap:8px;font-size:11px;align-items:center}.sp-check input{width:auto}.sp-admin .sp-danger{background:#a84444}@media(max-width:650px){.sp-card{padding:22px;margin:16px 0}.sp-metrics{grid-template-columns:1fr}.sp-toolbar{flex-wrap:wrap}.sp-admin h1{font-size:25px}.sp-admin td,.sp-admin th{padding:12px}}
+</style></head><body><p style="padding:12px;font:14px system-ui;color:#5b6f82">Read-only demo preview · simulated data · controls disabled</p>
+<div class="sp-admin">
+    <div class="sp-brand"><span class="sp-mark">S</span> SnappPay <span class="sp-tag">STAGE</span></div>
+    <h1>Payment operations</h1>
+    <p class="sp-subtitle">Follow payments from checkout to settlement. Review exceptions before taking action.</p>
+    <div class="sp-metrics">
+        <div class="sp-metric">Payments on this page<strong>1</strong>Latest 25 attempts per page</div>
+        <div class="sp-metric">Recorded payments<strong>0</strong>Provider settled, invoice credited</div>
+        <div class="sp-metric">Needs attention<strong>1</strong>Recovery or accounting pending</div>
+    </div>
+        <div>
+
+        <label>Invoice ID<input disabled name="invoice" inputmode="numeric" value="" placeholder="All invoices"></label>
+        <button disabled class="sp-button" type="submit">Filter payments</button>
+    </div>
+    <div class="sp-scroll"><table><thead><tr><th>Invoice / reference</th><th>Amount</th><th>Status</th><th>Last updated (UTC)</th><th>Actions</th></tr></thead><tbody>
+            <tr><td><span>Invoice #1</span><br><code>s7b720a651f48ea47ef8d71e1f895f91b</code></td>
+        <td>0.00 IRT</td>
+        <td><span class="sp-state sp-state-cancelled">cancelled</span>        <br><small>Refund: provider_done · accounting check required<br>srde961dee8a112e6ef03b2f32f30db261<br>100000.00 IRT</small></td>
+        <td>2026-10-05 00:24</td><td>
+        <div>
+
+            <button disabled class="sp-button" name="action" value="reconcile">Reconcile</button>
+            <button disabled class="sp-button" name="action" value="status">Provider status</button>
+        </div>
+                        </td></tr>
+            </tbody></table></div>
+    <nav class="sp-pagination" aria-label="Payment pages"><span>← Previous</span><span>Page 1</span><span>Next →</span></nav>
+        <details><summary>Deployment readiness &amp; recovery</summary><div class="sp-notice">
+        <p>Environment: stage · API: https://api.snapppay.test · Production acknowledgment: pending.</p>
+        <p>Register exact return URL: <code>https://merchant.example.test/modules/gateways/callback/snapppay.php</code>. Whitelist server egress IP with SnappPay. Enable WHMCS cron and inspect Gateway Log. Acceptance acknowledgment is configuration, not proof of provider certification.</p>
+        <p>Review: inspect provider portal and invoice ledger before correction. token_unknown: never recreate same transaction blindly. Refund provider_done: complete native WHMCS refund accounting using same refund ID; never send another manual transfer. Keep environment credentials unchanged while payments remain unresolved.</p>
+    </div></details>
+</div>
+
+</body></html>

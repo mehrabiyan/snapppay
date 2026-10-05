@@ -1,0 +1,10 @@
+parameters:
+    level: 5
+    dynamicConstantNames:
+        - ROOTDIR
+    paths:
+        - modules
+        - includes
+    scanFiles:
+        - tests/fixtures/whmcs-stubs.php
+    tmpDir: tests/runtime/phpstan
